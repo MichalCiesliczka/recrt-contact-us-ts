@@ -1,0 +1,48 @@
+{
+  "name": "recrt-rotageek",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.0.2",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.4.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^5.0.7",
+    "react-scripts-ts": "2.17.0",
+    "react-test-renderer": "^16.4.14",
+    "redux": "^4.0.0",
+    "redux-actions": "^2.6.1",
+    "redux-form": "^7.4.2",
+    "reselect": "^3.0.1",
+    "tslint": "^5.11.0",
+    "typesafe-actions": "^2.0.4",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject",
+    "tslint": "tslint 'src/**/*.ts{,x}'"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.9.4",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-redux": "^6.0.9",
+    "@types/react": "^16.4.14",
+    "@types/redux-form": "^7.4.7",
+    "babel-eslint": "^9.0.0",
+    "typescript": "^3.0.3"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{ts,tsx}",
+      "src/features/**/*.{ts,tsx}",
+      "!src/**/index.{ts,tsx}",
+      "!**/containers/**/*.{ts,tsx}"
+    ]
+  }
+}
