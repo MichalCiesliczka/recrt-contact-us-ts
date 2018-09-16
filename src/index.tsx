@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 import configureStore from './store';
 
 import App from './core/app';
+import ContactUs from './features/contactUs';
 
 import './index.css';
 
@@ -13,7 +14,9 @@ const { store } = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App>
+      <ContactUs />
+    </App>
   </Provider>,
   document.getElementById('root') as HTMLElement,
 );
