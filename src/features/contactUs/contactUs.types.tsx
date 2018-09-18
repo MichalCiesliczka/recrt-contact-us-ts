@@ -7,6 +7,15 @@ export interface ContactUsMessage {
   message: string,
 };
 
+export interface SubmittedMessage extends ContactUsMessage {
+  id: string,
+};
+
+export interface TableColumn {
+  label: string,
+  value: string,
+}
+
 export interface ContactUsState {
   readonly submittedMessages: ContactUsMessage[];
 };

@@ -6,7 +6,7 @@ import { StateActions } from './rootReducer';
 
 export const LOCAL_STORAGE_KEY = 'messagesList';
 
-const saveRecipesToLS = (list: ContactUsMessage[]) => {
+const saveMessagesToLS = (list: ContactUsMessage[]) => {
   try {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(list));
   } catch (error) {
@@ -20,13 +20,13 @@ const localMessagesMiddleware: Middleware =
   (next: Dispatch) =>
   (action: StateActions) => {
     if (action.type === SUBMIT_CONTACT_FORM) {
-      const { submittedMessages } = store.getState().contactUs;
+      const newMessages = [...store.getState().contactUs.submittedMessages];
 
-      submittedMessages.push(action.payload);
-      saveRecipesToLS(submittedMessages);
+      newMessages.push(action.payload);
+      saveMessagesToLS(newMessages);
 
       return next({
-        payload: submittedMessages,
+        payload: newMessages,
         type: UPDATE_MESSAGES_LIST,
       });
     }

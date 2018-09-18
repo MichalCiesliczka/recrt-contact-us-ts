@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MessagesTable /> should render default status 1`] = `
+<table
+  className="MuiTable-root-01"
+>
+  <thead
+    className="MuiTableHead-root-02"
+  >
+    <tr
+      className="MuiTableRow-root-03 MuiTableRow-head-06"
+    >
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root-08 MuiTableCell-head-09"
+        scope="col"
+      >
+        No.
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root-08 MuiTableCell-head-09"
+        scope="col"
+      >
+        Name
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root-08 MuiTableCell-head-09"
+        scope="col"
+      >
+        Email
+      </th>
+      <th
+        aria-sort={null}
+        className="MuiTableCell-root-08 MuiTableCell-head-09"
+        scope="col"
+      >
+        Message
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="MuiTableBody-root-016"
+  >
+    <tr
+      className="MuiTableRow-root-03 MuiTableRow-hover-05"
+    >
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root-08 MuiTableCell-body-010"
+        scope={undefined}
+      >
+        1
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root-08 MuiTableCell-body-010 Component-column-017"
+        scope={undefined}
+      >
+        Test Name
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root-08 MuiTableCell-body-010 Component-column-017"
+        scope={undefined}
+      >
+        email@domain.com
+      </td>
+      <td
+        aria-sort={null}
+        className="MuiTableCell-root-08 MuiTableCell-body-010 Component-column-017"
+        scope={undefined}
+      >
+        Test message
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
