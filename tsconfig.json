@@ -25,6 +25,8 @@
     "acceptance-tests",
     "webpack",
     "jest",
-    "src/setupTests.ts"
+    "src/setupTests.ts",
+    "src/components/ContactUsForm/__tests__/ContactUsForm.test.tsx",
+    "src/components/ContactUsForm/__tests__/InputField.test.tsx"
   ]
 }

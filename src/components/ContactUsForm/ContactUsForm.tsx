@@ -57,7 +57,7 @@ const ContactUsForm: React.SFC<Props & InjectedFormProps<ContactUsMessage, Props
         label="Your email"
         name="email"
         component={InputField}
-        type="text"
+        type="email"
       />
       <Field
         label="Message"

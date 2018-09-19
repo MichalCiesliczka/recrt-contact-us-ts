@@ -7,15 +7,15 @@ import { tableColumns } from '../../../features/contactUs/contactUs.constans';
 
 describe('<MessagesTable />', () => {
   const defaultProps = {
+    columns: tableColumns,
     messages: [
       {
-        id: '1',
-        name: 'Test Name',
         email: 'email@domain.com',
+        id: '1',
         message: 'Test message',
+        name: 'Test Name',
       },
     ],
-    columns: tableColumns
   };
 
   it('renders without crashing', () => {
